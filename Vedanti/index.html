@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/custom.js"></script>
+  <title>vedanti</title>
+</head>
+
+
+<body class="bg-gray-100">
+    
+  <div id="loading" style="display: none;">
+      <div id="loading-center">
+          <div id="loading-center-absolute">
+              <div class="object" id="object_one"></div>
+              <div class="object" id="object_two"></div>
+              <div class="object" id="object_three"></div>
+              <div class="object" id="object_four"></div>
+          </div>
+      </div>
+  </div>
+  <!--Nav menu -->
+  <header>
+    <div class="max-container flex md:flex-row justify-between items-center header-area">
+        <div class="flex items-center">
+          <img src="assets\images\header_logo.png" alt="Header logo" class="rounded-full">
+          <h1 class="text-black text-lg custom-heading">Vedanti Pawar</h1>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="md:hidden text-gray-700 focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+
+        <!-- Navigation for Mobile -->
+        <nav id="mobile-menu" class="hidden md:flex mt-4 md:mt-0">
+          <ul class="custom-nav">
+            <li><a href="index.html" class="text-black nav-link nav-link-home">Home</a></li>
+            <li><a href="#" class="text-black nav-link nav-link-menu">About Me</a></li>
+            <li class="relative group">
+              <a href="work.html" class="text-black nav-link nav-link-menu group-hover:text-gray-300">Work</a>
+              <ul class="absolute top-full left-0 sub-menu hidden md:block">
+                <li><a href="painting.html" class="text-black hover:text-gray-300">Paintings</a></li>
+                <li><a href="illustration.html" class="text-black hover:text-gray-300">Illustrations</a></li>
+                <li><a href="#" class="text-black hover:text-gray-300">Games</a></li>
+                <li><a href="#" class="text-black hover:text-gray-300">Graphic Design</a></li>
+              </ul>
+            </li>
+            <li><a href="#" class="text-black nav-link nav-link-menu contact-btn">Get in Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="portfolio-section">
+      <div class="main-section flex">
+        <div class="max-container">
+          <div class="w-1/2 custom-section">
+            <img src="assets/images/Vedanti.jpg" alt="Vedanti_img" class="w-full h-auto rounded">
+          </div>
+
+          <div class="portfolio-title">
+            <div class="text-black-800 mb-4">
+              <h1 class="portfolio-heading">
+                <span class="block-title">VE</span>DANTI PAWAR
+              </h1>
+              <p class="title-text">
+                PORTFOLIO
+              </p>
+            </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="inner-section flex">
+        <div class="max-container">
+          <ul class="social-icon flex space-x-6">
+            <li><a href="#" class="icon-link"><img src="assets/images/fb.png" alt="Facebook" class="w-4 h-4"></a></li>
+            <li><a href="#" class="icon-link"><img src="assets/images/wp.png" alt="WordPress" class="w-4 h-4"></a></li>
+            <li><a href="#" class="icon-link"><img src="assets/images/li.png" alt="LinkedIn" class="w-4 h-4"></a></li>
+            <li><a href="#" class="icon-link"><img src="assets/images/pi.png" alt="Pinterest" class="w-4 h-4"></a></li>
+            <li><a href="#" class="icon-link"><img src="assets/images/in.png" alt="Instagram" class="w-4 h-4"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-container">
+      <a href="#about-section">Scroll Down</a>
+    </div>
+
+    <div id="about-section" class="about-container">
+      <div class=" max-container">
+        <div class="about-left-sec w-70 p-6">
+          <h2 class="about-heading text-3xl mb-4">Hello,</h2>
+          <p class="about-text text-black">I am Vedanti !</p>
+          
+          <div class="about-para text-black">
+              <p>Welcome to my portfolio site! I'm Vedanti Pawar, an emerging artist based in Singapore. My work is characterised by a modern abstractionist style, drawing inspiration from a diverse range of materials and mediums, including creative code, digital art, painting, sculpture, and graphic design.</p>
+              <br>
+              <p>As you browse through my portfolio, you'll notice my remarkable ability to experiment with and manipulate my chosen materials, resulting in captivating and thought-provoking pieces. My work is a testament to my boundless creativity and willingness to explore new artistic techniques while maintaining my unique vision.</p>
+          </div>
+          
+          <div class="search-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 text-black">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-5-5m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+              </svg>
+              <a href="https://www.linkedin.com/in/vedanti-pawar-6412391ba/" target="_blank" class="search-link">
+                  https://www.linkedin.com/in/vedanti-pawar-6412391ba/
+              </a>
+          </div>
+        </div>
+
+        <!-- Right Section with Image -->
+        <div class="about-right-sec w-30">
+            <div class="image-about-sec">
+            <div class="about-img-container">
+                <img src="assets/images/vedanti_1.png" alt="about profile" class="about-img"/>
+            </div>
+            </div>
+            <div class="contact-info">
+              <h3 class="contact-title text-center text-2xl font-bold mb-4">Contact</h3>
+              <div class="contact-content flex flex-col items-start p-x-4">
+                  <div class="flex items-center mb-4">
+                      <img src="assets/images/location.png" alt="location" class="contact-image mr-4">
+                      <p class="contact-text">78 Bayshore Road, Costa Del Sol</p>
+                  </div>
+                  <div class="flex items-center mb-4">
+                      <img src="assets/images/email.png" alt="email" class="contact-image mr-4">
+                      <a href="mailto:Vedanti2304@gmail.com" class="contact-text">Vedanti2304@gmail.com</a>
+                  </div>
+                  <div class="flex items-center mb-4">
+                      <img src="assets/images/call.png" alt="call" class="contact-image mr-4">
+                      <a href="tel:+6594529761" class="contact-text">+65 94529761</a>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="resume-container">
+        <div class="resume-section flex">
+          <div class="max-container">
+            <div class="w-1/2 custom-resume">
+              <div class="vedanti-img-resume">
+              <img src="assets/images/vedanti_2.png" alt="Vedanti_2_img" class="resume-img">
+              </div>
+          
+          <div class="professional-container">
+              <h1 class="professional-heading">Professional Experience</h1>
+                <div class="experience-item">
+                  <p class="experience-title">Intern at Bali Beach Glamping | July 2023 - August 2023</p>
+                  <ul class="experience-list">
+                      <li>Helped cultivate a better structure to sell and share weddings with clients.</li>
+                      <li>Facilitated discussions and activities to promote the location and events hosting.</li>
+                      <li>Created Marketing Videos helping reach a new target audience for their events.</li>
+                  </ul>
+                </div>
+              
+                <div class="experience-item">
+                    <p class="experience-title">Intern and Art teacher at Little Artists Singapore | May 2021- August 2021</p>
+                    <ul class="experience-list">
+                      <li>Helped cultivate a learning-focused and welcoming atmosphere for students of cultural and socioeconomic backgrounds.</li>
+                      <li>Facilitated discussions and activities to promote student collaboration and engagement.</li>
+                      <li>Assisted lead teachers with planning daily classroom lessons and activities for over 20 students.</li>
+                      <li>Inspired students and assisted in developing creativity and self-expression through various art forms and media.</li>
+                    </ul>
+                </div>
+              
+                <div class="experience-item">
+                    <p class="experience-title">Intern for DigiPanion , Creative Designer | January 2023- June 2023</p>
+                    <ul class="experience-list">
+                      <li>Conducted regular reviews of operations and identify areas for improvement.</li>
+                      <li>Supported with creating project marketing materials to promote services.</li>
+                      <li>Delved into unique themes and subjects with each work to enhance artistic growth and skill..</li>
+                      <li>Developed strong communication and organisational skills through working on group projects.</li>
+                      <li>Chose and followed targeted styles, grammatical approaches and narrative voices for each piece.</li>
+                    </ul>
+                </div>
+              
+               <div class="experience-item">
+                <p class="experience-title">Youth Speaker for UNESCO Bangkok  | November 2023</p>
+                    <ul class="experience-list">
+                      <li>Student Representative: Spoke on behalf of students across the APAC region, addressing the future of empowering minds and the role of generative AI in education.</li>
+                      <li>Empowerment Focus: Emphasised strategies and technologies to empower young minds, highlighting their significance in a diverse APAC context.</li>
+                      <li>Generative AI in Education: Explored the transformative potential of generative AI in education, emphasising its benefits for students in Asia-Pacific.</li>
+                    </ul>
+                </div>
+              
+                <div class="experience-item">
+                    <p class="experience-title">Model United Nations | August 2020- May 2021</p>
+                    <ul class="experience-list">
+                      <li>Coordinated with different service providers to meet clients' individual needs.</li>
+                      <li>Cultivated strong network of providers delivering necessary assistance to further understand communities represented.</li>
+                      <li>Facilitated community outreach to expand participation and support.</li>
+                      <li>Led group discussions and activities to meet different community needs.</li>
+                    </ul>
+                </div>
+              
+                <div class="experience-item">
+                    <p class="experience-title">Freelance Artist  | August 2020 - Current</p>
+                    <ul class="experience-list">
+                      <li>Collaborated with content and marketing teams to confirm design compliance with brand guidelines.</li>
+                      <li>Designed website layouts, templates, and unique branded looks.</li>
+                      <li>Facilitated community outreach to expand participation and support.</li>
+                      <li>Completed final touches for projects before rollout.</li>
+                    </ul>
+                </div>
+                
+                <div class="experience-item">
+                    <p class="experience-title">Speaker for Microsoft APAC | May 2019</p>
+                    <ul class="experience-list">
+                      <li>Presented information launching Microsoft Sway to the APAC region of Microsoft.</li>
+                      <li>Implemented stories and anecdotes into speeches to make information more entertaining.</li>
+                      <li>Researched material extensively before writing informative speeches.</li>
+                      <li>Managed media relations for organisations to produce successful results.</li>
+                    </ul>
+                </div>
+                
+                 <div class="experience-item">
+                    <p class="experience-title">Intern at The Creative People | September 2023</p>
+                    <ul class="experience-list">
+                      <li>Developed expertise in curating art exhibitions, showcasing a talent for selecting and arranging artwork..</li>
+                      <li>Led art camps, effectively teaching and inspiring students, fostering creativity and growth.</li>
+                      <li>Efficiently organised class schedules and student assignments, contributing to a structured learning environment.</li>
+                    </ul>
+                </div>
+              
+            </div>
+        </div>
+  
+        <div class="w-1/2 resume-title">
+          <div class="text-black-800">
+            <h1 class="resume-heading">
+              <span class="resume-block">RE</span>SUME
+               <span class="block-name"> SUME
+                SUME</span>
+            </h1>
+          </div>
+          
+          <div class="education-container">
+              <h2 class="education-heading">Education</h2>
+                <div class="education-item">
+                  <p class="title-edu">Savannah College of Art and Design</p>
+                  Bachelor of Fine Arts majoring in Interactive Design and Game Design.<br>
+                  <span class="date"> | September 2022 - Current</span>
+                </div>
+                <ul class="education-list">
+                  <li class="achievement-item">Academic Honors Scholarship Recipient</li>
+                  <li class="achievement-item">Student Incentive Scholarship Recipient</li>
+                  <li class="achievement-item">SCAD Achievement Honor Scholarship Recipient</li>
+                  <li class="achievement-item">4.0 GPA</li>
+                  <li class="achievement-item">Dean's List: Fall 2022, Winter 2023, Spring 2023</li>
+                </ul>
+              
+                  <!-- Overseas Family School -->
+                  <div class="education-item">
+                    <p class="title-edu">Overseas Family School</p>
+                    <p class="title-edu">High School Diploma at Overseas Family School, Singapore. | Graduated May 2022</p>
+                  </div>
+                
+                  <ul class="education-list">
+                    <!-- Overseas Family School Achievements -->
+                    <li class="achievement-item">Completed and awarded a diploma for the International Baccalaureate</li>
+                    <li class="achievement-item">Awarded Academic Excellence in Visual Arts and Information Technology in Global Societies (2020-2022)</li>
+                    <li class="achievement-item">Leader for High School Set Design Club (September 2021-December 2021)</li>
+                    <li class="achievement-item">Events Leader for TED Overseas Family School</li>
+                    <li class="achievement-item">Research Project: How does Flavin use space, light and colour to create a physical and emotional response to the viewer?</li>
+                    <li class="achievement-item">Swim Team Member (August 2018- May 2020)</li>
+                    <li class="achievement-item">Leader and Member of Overseas Family High School Plant Club (September 2019-May 2021)</li>
+                    <li class="achievement-item">Astronomy and Astrology Club Member (January - June 2020)</li>
+                    <li class="achievement-item">Elected Leader and Choreographer of Bollywood Dance (September 2021- January 2022)</li>
+                    <li class="achievement-item">Had artwork displayed at the Australian Embassy in Singapore as a part of Singapore's international school artwork exhibition. (2022)</li>
+                  </ul>
+                  
+                  
+                  <div class="education-item">
+                    <p class="title-edu">Overseas Family School | August 2018- June 2020 </p>
+                  </div>
+                
+                  <ul class="edu-list">
+                    <!-- Overseas Family School Achievements -->
+                    <li class="achiev-item">Completed the IGCSE</li>
+                    <li class="achiev-item">Awarded Academic Excellence in Visual Arts</li>
+                    <li class="achiev-item">Awarded Academic Excellence in Information and Communications Technologies</li>
+                    <li class="achiev-item">Awarded Academic Excellence in Mandarin</li>
+                    <li class="achiev-item">Awarded Academic Excellence in English language and Literature</li>
+                  </ul>
+                </div>
+                
+                
+                <!--<div class="activity-section">-->
+                <!--    <p class="tech-title">Technical Skills- </p>-->
+                      <!--</div>  -->
+                </div>
+              </div>
+          </div>
+      </div>
+
+  <!--Technical skill -->
+ <div class="technical-skills">
+    <div class="activity-section flex">
+        <div class="max-container">
+            <div class="w-1/2 custom-resume">
+              <div class="activity-section">
+                     <p class="activity-title">Activites-</p>
+                     <div class="activity-item">
+                        <p class="active-title">Volunteer | May 2021- November 2021</p>
+                        <ul class="active-list">
+                          <li>A cultivated strong network of providers delivering necessary assistance to the elderly community.</li>
+                          <li>Used strong interpersonal communication skills to convey information to others.</li>
+                          <li>Assisted with special events and programs.</li>
+                        </ul>
+                    </div>
+                    
+                      <div class="activity-item">
+                        <p class="active-title">Fashion Model for Savannah College of Art and Design  | Dec 2022- July 2023</p>
+                        <ul class="active-list">
+                          <li>Professionally trained by Coco Rocha as a part of the SCAD 2023 fashion show </li>
+                          <li>Modelled for SCAD Fashion Department: Collaborated with the SCAD Fashion Department as a featured model for the 2023 SCAD Fashion Show in Atlanta, showcasing cutting-edge designs and contributing to the success of the event through professionalism and runway expertise.</li>
+                        </ul>
+                    </div>
+                    
+                      <div class="activity-item">
+                        <p class="active-title">Model  | August 2022- Current</p>
+                        <ul class="active-list">
+                          <li>Adapted quickly to changing environments for continued professionalism under pressure.</li>
+                          <li>Secured repeat bookings through outstanding professionalism and versatility.</li>
+                          <li>Posed for photo shoots to showcase clothing designs and accessories.</li>
+                        </ul>
+                    </div>
+              </div>
+              
+            </div>
+  
+            <div class="w-1/2 resume-title">
+                 <p class="tech-heading">Technical Skills-</p>
+                <div class="technical-sec">
+                   
+                  <div class="left-side">
+                    <p class="tech-title">Software Skills</p>
+                    <div class="tech-part">
+                    <img src="assets/images/Adobe_suite.png" alt="Software Skills Icon" class="adobe-icon">
+                    <p class="adobe-name">Adobe</p>
+                    <img src="assets/images/unreal_engin.png" alt="Unreal Icon" class="adobe-icon">
+                    </div>
+                     <div class="img-auto">
+                       <img src="assets/images/auto_desk.png" alt="Auto-desk" class="autodesk-icon">
+                     </div>
+                     <div class="logo-part">
+                         <img src="assets/images/n1.png" alt="n1" class="logo-icon">
+                         <img src="assets/images/p1.png" alt="p1" class="logo-ico">
+                         <img src="assets/images/o1.png" alt="o1" class="logo-ico">
+                         <img src="assets/images/w1.png" alt="w1" class="logo-ico">
+                         <img src="assets/images/x1.png" alt="x1" class="logo-ico">
+                     </div>
+                     <p class="micro-title">Microsoft</p>
+                      <p class="activity-name">Hobbies-</p>
+                     <div class="hobbie-part">
+                     <p class="line-dotted vl"></p>
+                     <div class="details-hobbie">
+                       <ul class="hobbies-list">
+                          <li class="hobbies-part">
+                            <img src="assets/images/painting.png" alt="Painting">
+                            <span class="text-hobbie">Painting</span>
+                          </li>
+                          <li class="hobbies-part">
+                            <img src="assets/images/cooking.png" alt="Cooking">
+                            <span class="text-hobbie">Cooking</span>
+                          </li>
+                          <li class="hobbies-part">
+                            <img src="assets/images/meeting.png" alt="Meeting Friends">
+                            <span class="text-hobbie">Meeting Friends</span>
+                          </li>
+                         <li class="hobbies-part">
+                            <img src="assets/images/gaming.png" alt="Video Games">
+                            <span class="text-hobbie">Playing Video Games</span>
+                          </li>
+                        </ul>
+                     </div>
+                     </div>
+                  </div>
+                 
+                  <div class="right-side">
+                      <div class="side-right">
+                        <p class="coding-heading">Coding Skills</p>
+                          <p class="coading-title">Basic to Intermediate Knowledge of-</p>
+                        <div class="skill">
+                            <p class="skill-html">HTML</p>
+                            <p class="skill-css">CSS</p>
+                        </div>
+                          <div class="skill">
+                            <p class="skill-js">JavaScript</p>
+                            <p class="skill-c">C+</p>
+                          </div>
+                      </div>
+                     
+                      <div class="chart-lang">
+                             <p class="lang-title">LANGUAGUE PROFICIENCY </p>
+                      </div>
+                      <div>
+                          <canvas id="myChart"></canvas>
+                      </div>
+                     
+                      <div class="conatact-portion">
+                            <div class="contact-details">
+                               <p class="title-contact">Contact Me-</p>
+                            </div>
+                            <div class="details-contact">
+                                <p class="address-heading">ADDRESS:</p>
+                                <span class="info-add">78 Bayshore Road Costa Del Sol, 17-23, 469991</span>
+                                <p class="address-heading">EMAIL :</p>
+                                <span class="info-email"><a href="mailto:vedanti2304@gmail.com">vedanti2304@gmail.com</a></span>
+                                <p class="address-heading">WEBSITE :</p>
+                                <span class="info-website">https://vedanti2304.wixsite.com/vedantipawar</span>
+                                  <p class="address-heading">SOCIAL MEDIA :</p>
+                                  <span class="info-social">Instagram- @vedanti.pawarr</span>
+                                  <span class="info-social">LinkedIn- <a href="https://www.linkedin.com/in/vedanti-pawar-6412391ba/" target="_blank">linkedin.com/in/vedanti-pawar-6412391ba</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+      </div>
+    </div>
+         <div class="download-part">
+         <div class="download-section flex">
+            <div class="max-container">
+                
+                <a href="path/to/your/resume.pdf" download="YourResumeName.pdf">
+                    <button class="dwn-btn">Download Resume Here </button>
+                </a>
+            </div>
+       </div>
+      </div>
+ 
+
+<!-- Footer Section -->
+<footer>
+  <div class="p-4 bg-black text-white-700 footer-area">
+      <div class="max-container"></div>
+    <div class="max-container footer-heading mb-4 text-center">Thank You</div>
+
+    <div class="max-container footer-section flex flex-wrap py-4">
+      <!-- First Footer Section - Social Media Icons -->
+      <div class="social-media md:w-1/2 lg:w-1/2 xl:w-1/2 flex space-x-6 p-4">
+        <ul class="flex space-x-6">
+          <li><a href="#" class="icon-link"><img src="assets/images/fb.png" alt="Facebook" class="w-4 h-4"></a></li>
+          <li><a href="#" class="icon-link"><img src="assets/images/wp.png" alt="WordPress" class="w-4 h-4"></a></li>
+          <li><a href="#" class="icon-link"><img src="assets/images/li.png" alt="LinkedIn" class="w-4 h-4"></a></li>
+          <li><a href="#" class="icon-link"><img src="assets/images/pi.png" alt="Pinterest" class="w-4 h-4"></a></li>
+          <li><a href="#" class="icon-link"><img src="assets/images/in.png" alt="Instagram" class="w-4 h-4"></a></li>
+        </ul>
+      </div>
+
+      <!-- Second Footer Section - Address and Email -->
+      <div class="footer-address md:w-1/2 lg:w-1/2 xl:w-1/2 text-sm p-4">
+        <p class="footer-area">
+          ADDRESS:<br>
+          <span class="text-line">78 Bayshore Road Costa Del Sol, 17-23,<br>
+          469991</span><br><br>
+          EMAIL:<br>
+          <span><a href="mailto:vedanti2304@gmail.com" class="text-line">vedanti2304@gmail.com</a></span>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+
+var xValues = ["Marathi", "Hindi", "Chinese", "Spanish", "English"];
+var yValues = [6, 8, 5, 4, 10, 0];
+var barColors = ["orange", "orange", "orange", "orange", "orange"];
+
+// console.log(document.getElementById("myChart"));
+new Chart(document.getElementById("myChart"), {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues,
+      barPercentage: 0.8 
+    }]
+  },
+  options: {
+    legend: { display: false },
+    title: {
+      display: true,
+    },
+    scales: {
+      y: {
+        beginAtZero: true,
+        stepSize: 2,
+        max: 10
+      }
+    }
+  }
+});
+</script>
+
+
+</body>
+</html>
